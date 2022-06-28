@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@400;600 & family= Roboto & display=swap');
+*{
+    padding: 0;
+    margin:0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url(../img/leaves.webp);
+    background-attachment: scroll;
+}
+
+
+/*Aplico Mobile First a index, contacto y nosotros*/
+@media only screen and (min-width: 320px){
+    #contenedor-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "main"
+        "footer";
+    }
+    nav{
+        grid-area: nav;
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    nav{
+        background-color: hsla(335, 75%, 46%, 0.5);
+        padding: 15px 5px;
+        height: 12vh;
+        position:sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        nav img{
+            width: 120px;
+        }
+        nav ul{
+            display: flex;
+        }
+            nav ul li{
+                list-style: none;
+                margin-right: 10px;
+            }
+                nav ul li a{
+                    text-decoration: none;
+                    color:white;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    font-family: 'Poppins', sans-serif;
+                }
+    header a img{
+    width: 100%;
+    height: 35vh;
+    margin-bottom: 2vh;
+    }
+    h2{
+        color:blue;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+    p,
+    form{
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 10px;
+    }
+    main section h2{
+        margin: 20px 20px;
+        text-align: center;
+    }
+    footer{
+        background-color: hsla(335, 75%, 46%, 0.5);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+        footer div a{
+            margin-bottom: 10px;
+        }
+            footer div a img{
+                margin-right:15px;
+                margin-top:10px;
+                width: 30px;
+            }
+    button,
+    nav{
+        cursor: pointer;
+    }
+    fieldset{
+        margin: 15px 0;
+    }   
+    /*Aplico clases con camelcase*/
+    .textCentrar{
+        text-align: center;
+    }
+    .formCursor{
+        cursor:pointer;
+    }
+    .textRegular{
+        font-weight: 400;
+    }
+    .textSpace{
+        margin: 25px 25px;
+    }
+    .leftButton{
+        margin-left: 2%;
+    }
+    .interColor{
+        background-color: rgb(240, 77, 28);
+    }
+    .colorButton{
+        background-color: #f870bf;
+    }
+    .textLeft{
+        text-align: left;
+    }  
+    button,
+    nav{
+        cursor: pointer;
+    }
+    fieldset{
+        margin: 15px 0;
+    }   
+    .textCentrar{
+        text-align: center;
+    }
+    .formCursor{
+        cursor:pointer;
+    }
+    .textRegular{
+        font-weight: 400;
+    }
+    .textSpace{
+        margin: 25px 25px;
+    }
+    .leftButton{
+        margin-left: 2%;
+    }
+    .interColor{
+        background-color: rgb(240, 77, 28);
+    }
+    .colorButton{
+        background-color: #f870bf;
+    }
+    .textLeft{
+        text-align: left;
+    }  
+    .medidaHeader{
+        width:65%;
+        height: auto;
+    }
+    .medidaImg{
+        width: 100%;
+        height: auto;
+        margin-left: 70px;
+    }   
+    .textBlock{
+        display: block;
+    }
+    .marginBlock{
+        margin-left: 20%;
+    }
+    .marginLeft{
+        margin-left: 40%;
+    }
+}    
+/*Fin de Mobile First en Index, Contacto y nosotros*/
+
+/*Aplico Mobile para Invierno2022 y Vintage*/
+@media only screen and (min-width: 320px){
+
+    #container-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "main"
+        "footer";
+    }
+    nav{
+        grid-area: nav;
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }     
+    section img{
+        width: 100%;
+        height: auto;
+    }
+    main section div,
+    main p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    main section h2{
+        margin: 20px 10px;
+    }
+    main section table{
+        border: double 1px rgb(240, 77, 28);
+        font-size: 2rem;
+        margin-left: 18%;
+    }
+        main section table tr,
+        main section table td,
+        main section table th{
+            border: double 1px rgb(240, 77, 28);
+            margin-right: 10px;
+            margin-top: 10px;
+            background-color: rgb(245, 212, 164);
+        }
+    main section div,
+    main section button{
+        font-size: 1.5rem;
+        margin-left: 2%;
+        padding: 8px 8px;
+    }    
+        main section div label{
+            margin-right: 15px;
+        }  
+    figure figcaption,          
+    figure p,
+    figure div{
+        font-size: 18px;
+        text-align: center;
+    }
+    .spaceButton{
+        margin-left: 29%;
+    }
+    .textTittle{
+        margin-top: 5vh;
+        font-size: 20px;
+    }        
+}
+
+/*Aplico deskshop a invierno2022 y vintage*/
+@media only screen and (min-width: 1024px){
+    #container-grid{
+        display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: auto;
+        grid-column-gap: 80px;
+		grid-template-areas: 
+		"nav nav nav nav"
+		"header header header header"
+        "main main main main"
+		"footer footer footer footer";
+	}
+    nav{
+        grid-area: nav;
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    nav{
+        padding: 10px 0px;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+        nav img{
+            width: 120px;
+            height: 70px;
+        }
+    header a img{
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+    table{
+        margin-left: 43%;
+    }
+    figure figcaption,          
+    figure p,
+    figure div{
+        font-size: 18px;
+        text-align: center;
+    }
+    .spaceButton{
+        margin-left: 11vw;
+    }
+    .textTittle{
+        margin-top: 5vh;
+    } 
+/*Aplico grid a los productos*/
+    .seccion1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:auto;
+        column-gap: 25px;
+    }
+    .seccion2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:auto;
+        column-gap: 25px;
+    }
+    .seccion3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:auto;            
+        column-gap: 25px;
+    }
+    .seccion4{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:auto;
+        column-gap: 25px;
+    }
+    .seccion5{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:auto;
+        column-gap: 25px;
+    }
+    section div figure img{
+        height: 90vh;
+        width: 100%;
+    }
+    main section div,
+    main section button{
+        font-size: 1.5rem;
+        margin-left: 2%;
+        padding: 8px 8px;
+    }    
+        main section div label{
+            margin-right: 15px;
+        }   
+    main section table{
+    margin-left: 42%;
+    }
+}
+/*Fin de deskshop a invierno2022 y vintage*/
+    
+/*Aplico deskshop al Index, Nosotros y Contacto*/
+@media only screen and (min-width: 1024px){
+    #contenedor-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav nav nav"
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    }
+    nav{
+        grid-area: nav;
+    }
+    header{
+        grid-area: header;
+        width: 100%;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .medidaImg{
+        width: 75%;
+        height: auto;
+    }   
+    .marginBlock{
+        margin-left: 40vw;
+    }  
+    .marginLeft{
+        margin-left: 45%;
+    }
+}
